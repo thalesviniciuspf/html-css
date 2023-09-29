@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = children
+        */
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: aqua;
+        }
+        a:active{
+            color: yellow;
+        }
+        /* 
+        :: Pseudo elementos - Altera elementos HTML
+        */
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::after{
+            background-color: rgb(212, 76, 76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" class="especial">
+            <li>Símbolos para HTML5</li>
+        </a>
+        <a href="https://gustavoguanabara.github.io" target="_blank">
+            <li>Repositório GitHub</li>
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <li>Canal do youtube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com" target="_blank">
+            <li>Site do curso em video</li>
+        </a>
+    </ul>
+</body>
+</html>

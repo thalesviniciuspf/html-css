@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif; /* Fontes sem serifa para corpo do texto*/
+        /* Medidas Absolutas: cm, mm, in, PX, pt, pc
+
+        Medidas Relativas: EM (Tamanho atual), ex (Tamanho X), rem (em da fonte configurada no body), vw (Porcentagem da viewport), vh, %
+        
+        Usar px (16px é o padrão) ou em (1em é o padrão)*/
+        font-size: 17px;
+        font-weight: 200; /*lighter normal bold bolder*/
+        font-style: normal;
+        
+    }
+    h1{
+        text-decoration: underline;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3em;
+        font-family: Georgia, 'Times New Roman', Times, serif;/* Fontes com serifa para cabeçalho*/
+
+
+    }
+    h2{
+        /*Shorthand font
+        
+        font-style -> font-weight -> font-size -> font-family
+        
+        A ordem importa
+        */
+        font: italic bold 2em Georgia
+    }
+</style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam qui repellendus, distinctio saepe numquam natus reprehenderit quasi optio voluptatum aut quidem tenetur neque earum sequi commodi quia labore at mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor excepturi quibusdam veritatis expedita aliquid sequi non, at officiis ipsa odit iste dolorum nisi dolores voluptatum perspiciatis harum facilis vel?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis esse dignissimos assumenda odit harum nostrum. Fuga, minus vitae fugiat autem hic ipsa quae consequuntur repellendus ducimus dicta enim a voluptatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nesciunt aliquid rem consectetur quaerat ab inventore totam at dolorem quidem facere alias autem, vitae amet earum illo molestias quos error!</p>
+
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus dolore laborum veritatis optio id ut consequuntur doloribus numquam, adipisci, eos exercitationem aspernatur est doloremque sunt consectetur libero iusto non.</p>
+</body>
+</html>
