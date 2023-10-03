@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-image: linear-gradient(to bottom, rgb(39, 88, 128), white);
+            border: 1px solid blue;
+        }
+        
+        th{
+            background-color: lightblue;
+        }
+
+        td,th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 03 - Mesclagem de células</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th> <!--scope=colgroup pq é um conjunto-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th><!--scope=rowgroup pq é um conjunto-->
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Cláudia</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th><!--scope=rowgroup pq é um conjunto-->
+                <td>Bruno</td>
+                <td>Into</td>
+                <td>Wall</td>
+                <td>Gladiador</td>  
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Into</td>
+                <td>Wall</td>
+                <td>Gladiador</td>  
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>Into</td>
+                <td>Wall</td>
+                <td>Gladiador</td>  
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

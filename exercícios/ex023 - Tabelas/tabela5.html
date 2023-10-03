@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela - Colgroup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        table{
+            border-collapse: collapse ;
+            width: 300px;
+        }
+        th,td{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+
+        col.cgrupo{
+            background-color: rgba(240, 92, 92, 0.541);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício - colgroup</h1>
+    <table>
+        <colgroup>
+            <!--A ordem das definições diz respeito à sequência das colunas-->
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+
+        </colgroup>
+
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <TD>23</TD>
+            <TD>Jornalista</TD>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <TD>32</TD>
+            <TD>Empresário</TD>
+        </tr>
+    </table>
+
+</body>
+</html>

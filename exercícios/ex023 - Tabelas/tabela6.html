@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        table{
+            border-collapse: collapse ;
+            width: 300px;
+        }
+        th,td{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+
+        col.cgrupo{
+            background-color: rgba(240, 92, 92, 0.541);
+        }
+        
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero error vel harum alias, tempore quam, minima corporis laborum unde sed laudantium distinctio. Laboriosam enim inventore dolores quibusdam eveniet dolor maxime.</p>
+    <!--Para ter uma tabela responsiva, envelopa toda a tabela numa div com class container e usa o overflow-x: auto-->
+    <DIV id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>JAN</th>
+                    <th>FEV</th>
+                    <TH>MAR</TH>
+                    <TH>MAI</TH>
+                    <TH>JUN</TH>
+                    <TH>JUL</TH>
+                    <TH>AGO</TH>
+                    <TH>SET</TH>
+                    <TH>OUT</TH>
+                    <TH>NOV</TH>
+                    <TH>DEZ</TH>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>SOM</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </DIV>
+</body>
+</html>
