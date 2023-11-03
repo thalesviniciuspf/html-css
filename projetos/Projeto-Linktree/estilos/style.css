@@ -1,0 +1,15 @@
+@charset'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
