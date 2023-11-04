@@ -23,12 +23,18 @@ a{
 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Alinhamento Vertical */
     align-items: center; /* Alinhamento Horizontal*/
+    text-align: center;
+    /* justify-content: center; Sem necessidade porque o alinhamento é horizontal*/
+}
+
+section p{
+    color:blue;
 }
 
 .foto{
     justify-content: space-around;
+    /* Funções para deixar a foto redonda */
     shape-outside: circle();
     clip-path: circle();
 }
@@ -39,21 +45,23 @@ h1{
 
 .lista{
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 2em 0;
-    gap: 3em;
-    background-color: aliceblue;
 }
 
 .lista-item{
     display: flex;
+    padding: 10px;
+    border: 1px solid black;
     border-radius: 2em;
+    
+    background-color: yellow;
+    margin: 2em 0;
+    gap: 3em;
+
 }
 
 .lista-link{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border: 1px solid black;
+    color: red;
+    text-align: center;
     flex-grow: 1;
 }
