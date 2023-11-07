@@ -64,20 +64,26 @@ h1{
     text-align: left;
 }
 
+img#img-git{
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    justify-content: right;
+}
+
 .lista-link{
 
     display: flex;
     justify-content: left;
     padding: 20px 100px 20px 10px;
     margin: 0.4em 0;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 1.2em;
-    background-color: lightblue;
-    color: red;
+    background-image: linear-gradient(to right, rgb(76, 76, 207), rgb(103, 103, 255));
+    color: white;
     font-size: 1.7em;
     text-decoration: none;
-    
-    
 }
 
 footer p{
